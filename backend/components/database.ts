@@ -45,7 +45,7 @@ class Database {
 
         // Descomentar la siguiente línea para sincronizar cambios a modelos
         // NOTA: hace drop table a todos los modelos!
-        // await this.sequelize.sync({ force: true });
+        await this.sequelize.sync({ force: true });
         // TODO: usar migrations para cambios en la base de datos
         
         console.log('Conectado a base de datos.');

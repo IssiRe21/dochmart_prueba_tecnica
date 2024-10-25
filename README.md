@@ -42,6 +42,32 @@ Ejecutar los siguientes comandos desde la carpeta de `/backend`
 El servidor de backend se encontrará disponible en el puerto `3000`.
 En caso de algún error, se mostrará en consola (ej. conexión a base de datos)
 
+### Actualización de tablas de base de datos
+
+Actualmente la conexión a la base de datos se realiza con `Sequelize`, con configuración para siempre sincronizar la estructura de las tablas con los modelos.
+
+**Cada vez que el servidor de backend es ejecutado, se realiza un DROP TABLE a todas las tablas.**
+
+Para cambiar este comportamiento, comentar la línea correspondiente en el archivo `/backend/components/database.ts`
+
+### Rutas de backend
+
+| Método | Path | Descripción | Parámetros | Auth. Requerida |
+| --- | --- | --- | --- | --- |
+| POST | /auth/login | Recibe credenciales de usuario y devuelve un token de autenticación y datos del usuario | email, password | |
+| POST | /auth/signup | Recibe credenciales de usuario y crea un registra un nuevo usuario en la base de datos | name, email, password, passwordConfirm | |
+| POST | /auth/logout | Finaliza la sesión del usuario |  | |
+| POST | /user/current | Devuelve la información del usuario correspondiente al token |  | Sí |
+| POST | /user/report | Genera un reporte (PDF) con la información del usuario correspondiente al token |  | Sí |
+
+### Autorización con token
+
+> Solo aplicable a rutas con `Auth. Requerida -> Sí`
+
+La autorización en las rutas de usuario se realiza mediante JWT, que debe ser enviado en el siguiente header (token bearer):
+
+`Authorization`: `Bearer <token>`
+
 -----
 
 ## Servicio de Reporte
