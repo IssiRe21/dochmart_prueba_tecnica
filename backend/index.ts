@@ -1,35 +1,3 @@
-// TODOs
-
-// ---commands---
-// npm init
-// npm install express
-// npm install dotenv
-// npm install cors
-// npm install passport
-// npm install express-session
-// npm install sequelize
-// npm install mysql2
-// npm install bcrypt
-// npm install jsonwebtoken
-
-// this one is a single line (better)
-// ||
-// \/
-// npm install express dotenv cors passport express-session sequelize mysql2 bcrypt jsonwebtoken
-
-
-
-// npx ts-node index.ts
-
-// npm i --save-dev @types/passport @types/passport-local @types/passport-jwt
-
-// npm i sequelize@6.6.2
-
-// npm i passport-local passport-jwt
-
-// npm i -D @types/express@4
-
-
 import environment from './components/environment';
 import Database from "./components/database";
 

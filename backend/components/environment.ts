@@ -1,16 +1,6 @@
 // Cargar variables de entorno desde .env
 import 'dotenv/config';
 
-// ---TODO: add to .env---
-// DATABASE_HOST="locahost"
-// DATABASE_NAME="dochmart_prueba_tecnica"
-// DATABASE_USERNAME="dochmart"
-// DATABASE_PASSWORD="123"
-// SERVER_PORT=3000
-// JWT_SECRET="JWT_SECRET"
-// CORS_CLIENT_ORIGIN="http://localhost:4200"
-// USER_REPORT_URL="http://localhost:8000"
-
 export default {
     database: {
         host: process.env.DATABASE_HOST as string,
