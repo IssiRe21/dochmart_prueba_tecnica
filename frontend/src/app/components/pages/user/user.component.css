@@ -1,0 +1,21 @@
+table {
+  border-collapse: collapse;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 50rem;
+  width: 100%;
+  text-align: center;
+
+  thead tr {
+    height: 60px;
+    background: cornflowerblue;
+    font-size: 16px;
+    color: white;
+  }
+
+  tbody tr {
+    height: 3rem;
+    border-bottom: 1px solid cornflowerblue;
+  }
+}

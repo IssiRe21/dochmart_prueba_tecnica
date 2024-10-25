@@ -1,0 +1,15 @@
+<div class="container">
+    <app-title title="Prueba técnica - Regina Arrieta" fontSize="2rem"></app-title>
+    <p>Developer Fullstack Jr</p>
+
+
+    <div *ngIf="userLoged" class="button-container">
+        <a routerLink="/profile" class="primary-button">Ver datos del usuario</a>
+    </div>
+
+    <div *ngIf="!userLoged" class="button-container">
+        <a routerLink="/login" class="primary-button"> Iniciar sesión</a>
+        <a routerLink="/signup" class="secondary-button">Registrarse</a>
+    </div>
+
+</div>

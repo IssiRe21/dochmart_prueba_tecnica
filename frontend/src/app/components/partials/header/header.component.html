@@ -1,0 +1,12 @@
+<header>
+    <div class="container">
+        <a routerLink="/" class="logo">Prueba Técnica</a>
+        <nav>
+            <ul>
+                <li *ngIf="userLoged"><a routerLink="/logout">Cerrar sesión</a></li>
+                <li *ngIf="!userLoged"><a routerLink="/login">Iniciar sesión</a></li>
+                <li *ngIf="!userLoged"><a routerLink="/signup">Registrarse</a> </li>
+            </ul>
+        </nav>
+    </div>
+</header>

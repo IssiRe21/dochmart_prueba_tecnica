@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+.button-container {
+  padding-top: 1rem;
+}
+
+.primary-button {
+  background: cornflowerblue;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  margin: 1rem;
+  border-radius: 8rem;
+  outline: none;
+}
+
+.secondary-button {
+  color: cornflowerblue;
+  background: none;
+  border: 2px solid cornflowerblue;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 10rem;
+  outline: none;
+}
+
+a:hover {
+  background-color: whitesmoke;
+  color: cornflowerblue;
+}
